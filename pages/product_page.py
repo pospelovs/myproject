@@ -1,6 +1,5 @@
 from .base_page import BasePage
 from .locators import ProductPageLocators
-from selenium.webdriver.common.by import By
 
 class ProductPage(BasePage):
     def go_to_basket_page(self):

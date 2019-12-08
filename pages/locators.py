@@ -14,3 +14,11 @@ class ProductPageLocators():
     PRODUCT_PRICE_WINDOW = (By.CSS_SELECTOR, "#messages > .alert-info > .alertinner")
     PRODUCT_NAME = (By.CSS_SELECTOR, ".product_main > h1")
     PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main > .price_color")
+
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+
+class BasketPageLocators():
+    VIEW_BASKET_BUTTON = (By.XPATH, "//a[contains(text(), 'View basket')]")
+    BASKET_IS_EMPTY = (By.XPATH, "//p[contains(text(), 'empty')]")
+    BASKET_HAS_NO_PRODUCT = (By.CSS_SELECTOR, ".btn-block")
