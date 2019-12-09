@@ -34,6 +34,5 @@ class LoginPage(BasePage):
         email_input.send_keys(email)
         password1_input.send_keys(password)
         password2_input.send_keys(password)
-        time.sleep(5)
         button_submit = self.browser.find_element(*LoginPageLocators.REGISTER_BUTTON)
         button_submit.click()

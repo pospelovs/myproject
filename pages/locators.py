@@ -23,3 +23,14 @@ class BasketPageLocators():
     VIEW_BASKET_BUTTON = (By.XPATH, "//a[contains(text(), 'View basket')]")
     BASKET_IS_EMPTY = (By.XPATH, "//p[contains(text(), 'empty')]")
     BASKET_HAS_NO_PRODUCT = (By.CSS_SELECTOR, ".btn-block")
+
+class LanguagePageLocators():
+    CHANGE_LANGUAGE_BUTTON = (By.NAME, "language")
+    SELECT_LANGUAGE_BUTTON = (By.CSS_SELECTOR, "[value='it']")
+    SUBMIT_LANGUAGE_BUTTON = (By.CSS_SELECTOR, 'button.btn.btn-default[type="submit"]')
+
+class SearchPageLocators():
+    SEARCH_FIELD = (By.ID, "id_q")
+    SEARCH_BUTTON = (By.CSS_SELECTOR, "[value='Search']")
+    SEARCH_RESULT_PRODUCT = (By.CSS_SELECTOR, ".product_pod h3 a")
+
